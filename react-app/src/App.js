@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import headshot from './raw/Headshot.JPG';
+import headerBack from './raw/Uark.jpg';
 import './styles/App.css';
 import './styles/Navbar.css';
 import Navbar from './components/Navbar';
@@ -11,25 +12,27 @@ function App() {
       <div className="Navbar-Default">
         <Navbar/>
       </div>
-      <header className="App-header">
-        //Add Introduction to me in this header
-        //Use Razorback color palette
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-           Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button className="Button" onClick={useButton} >This is a cool Button!</Button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header-background">
+        <header className="App-header">
+          //Add Introduction to me in this header
+          //Use Razorback color palette
+          <img src={headshot} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <Button className="Button" onClick={useButton} >This is a cool Button!</Button>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div>
       <body>
-
+        HELLO WORLD!!!
       </body>
     </div>
   );

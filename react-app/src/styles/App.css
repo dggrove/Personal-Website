@@ -7,15 +7,9 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  max-height: 500vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +20,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.App-header-background {
+  background-image: url(https://www.usnews.com/dims4/USNEWS/0adf560/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2F34%2F5344e8b46d580ced69018363e831e9%2Fcollege-photo_22755.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .Button {
