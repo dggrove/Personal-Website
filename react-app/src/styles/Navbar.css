@@ -1,0 +1,44 @@
+.Navbar-Default {
+    background-color: #c41e3a;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.Navbar-Accordion-Button {
+    color: blue;
+    background-color: gray;
+}
+
+.Navbar-Icon {
+    float: left;
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-inline: 5px;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: white;
+    border-width: 1px;
+    text-decoration: none;
+}
+
+.Navbar-Item {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    display: inline-block;
+    padding-inline: 15px;
+    text-decoration: none;
+    width: auto;
+}
+
+.Navbar-Item:hover {
+    background-color: white;
+    color: #c41e3a;
+}
+
+.Navbar-Links {
+    float: right;
+    text-align: center;
+    width: fit-content;
+    overflow: hidden;
+}

@@ -28,6 +28,16 @@
   color: #61dafb;
 }
 
+.Button {
+  color: blue;
+  background-color: darkgray;
+  font: black;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 2px;
+  border-width: 10px;
+  border-style: ridge;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
