@@ -12,6 +12,8 @@ function App() {
         <Navbar/>
       </div>
       <header className="App-header">
+        //Add Introduction to me in this header
+        //Use Razorback color palette
         <img src={logo} className="App-logo" alt="logo" />
         <p>
            Edit <code>src/App.js</code> and save to reload.
@@ -26,6 +28,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <body>
+
+      </body>
     </div>
   );
 }
