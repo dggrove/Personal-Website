@@ -3,17 +3,27 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /*height: 40vmin;*/
+  max-height: 400px;
+  /*pointer-events: none;*/
+  position: relative;
+  display: block;
+  margin-left: 5%;
+  margin-right: auto;
+  margin-top: 2%;
+  float: left;
+  object-fit: fill;
+  background-image: url(https://media.licdn.com/dms/image/D4E03AQHvt72herMUbw/profile-displayphoto-shrink_800_800/0/1685734833853?e=2147483647&v=beta&t=IzSmnZhyIJ2RFGC6IvWc8LQsI5Xfzjqf2_Gi77U89qQ);
 }
 
 .App-header {
   min-height: 100vh;
   max-height: 500vh;
-  display: flex;
+  display: inline-flexbox;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-overflow: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -23,9 +33,18 @@
 }
 
 .App-header-background {
-  background-image: url(https://www.usnews.com/dims4/USNEWS/0adf560/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2F34%2F5344e8b46d580ced69018363e831e9%2Fcollege-photo_22755.jpg);
-  background-repeat: no-repeat;
+  /*background-image: url(https://www.usnews.com/dims4/USNEWS/0adf560/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2F34%2F5344e8b46d580ced69018363e831e9%2Fcollege-photo_22755.jpg);
+  background-repeat: no-repeat;*/
+  background-color: black;
   background-size: contain;
+  height: auto;
+  max-height: 500px;
+}
+
+.App-header-item {
+  content: "";
+  position: relative;
+  vertical-align: middle;
 }
 
 .Button {

@@ -1,26 +1,21 @@
 import headshot from './raw/Headshot.JPG';
-import headerBack from './raw/Uark.jpg';
 import './styles/App.css';
 import './styles/Navbar.css';
 import Navbar from './components/Navbar';
 import { Button } from 'react-bootstrap';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './components/pages/Home'
+import Projects from './components/pages/Projects'
 
 <script> src="App.js"; </script>
 function App() {
   return (
-    <div className="App">
-      <div className="Navbar-Default">
-        <Navbar/>
-      </div>
+    /*<div className="App">
+      <Navbar/>
       <div className="App-header-background">
         <header className="App-header">
-          //Add Introduction to me in this header
-          //Use Razorback color palette
-          <img src={headshot} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <Button className="Button" onClick={useButton} >This is a cool Button!</Button>
+          <img src={headshot} className="App-logo App-header-item" />
+          <Button className="Button App-header-item" onClick={useButton} >This is a cool Button!</Button>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -34,7 +29,14 @@ function App() {
       <body>
         HELLO WORLD!!!
       </body>
-    </div>
+    </div>*/
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' exact element={<Home />}/>
+        <Route path='/projects' exact element={<Projects/>}/>
+      </Routes>
+    </Router>
   );
 }
 
