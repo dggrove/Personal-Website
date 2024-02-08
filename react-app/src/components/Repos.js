@@ -1,20 +1,30 @@
 import React from 'react';
-import { Octokit } from 'octokit';
+import { useState, useEffect } from 'react';
+import Repo from './Repo';
+
+const getRepos = async() => {
+    let res = await fetch(
+        `https://api.github.com/users/SkylordGrove/repos`
+    );
+    let data = await res.json();
+    return data;
+}
 
 function Repos() {
-    let items = ["Big Chungus", "Little Chungus"]
+    const [repoInfo, setRepoInfo] = useState([]);
+
+    useEffect(() => {
+        getRepos()
+        .then(data=>
+            setRepoInfo(data)
+        );
+    }, [])
 
     return(
         <ul>
-            {items.map((item) => (<li key={item}>{item}</li>))}
+            {repoInfo.map((repo) => <Repo repository={repo}/>)}
         </ul>
     )
-}
-
-function fetchRepos() {
-    const octokit = new Octokit({
-        auth: ''
-    })
 }
 
 export default Repos
