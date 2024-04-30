@@ -7,23 +7,28 @@
   max-height: 400px;
   /*pointer-events: none;*/
   position: relative;
-  display: block;
-  margin-left: 5%;
-  margin-right: auto;
-  margin-top: 2%;
+  /*display: block;*/
+  /*margin-left: 5%;*/
+  /*margin-right: auto;*/
+  margin-top: 46px;
+  /*margin-bottom: 10%;*/
   float: left;
-  object-fit: fill;
+  /*object-fit: fill;*/
   background-image: url(https://media.licdn.com/dms/image/D4E03AQHvt72herMUbw/profile-displayphoto-shrink_800_800/0/1685734833853?e=2147483647&v=beta&t=IzSmnZhyIJ2RFGC6IvWc8LQsI5Xfzjqf2_Gi77U89qQ);
+  border-radius: 100px;
+  border-style: outset;
+  border-color: #c41e3a;
+  border-width: 5px;
 }
 
 .App-header {
   min-height: 100vh;
-  max-height: 500vh;
-  display: inline-flexbox;
-  flex-direction: column;
+  max-height: fit-content;
+  display: flex;
+  /*flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-overflow: center;
+  text-overflow: center;*/
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -47,6 +52,14 @@
   vertical-align: middle;
 }
 
+.Bio {
+  vertical-align: center;
+  position: relative;
+  /*align-self: middle;
+  text-align: center;*/
+  text-overflow:inherit;
+}
+
 .Button {
   color: blue;
   background-color: darkgray;
@@ -55,6 +68,13 @@
   border-radius: 2px;
   border-width: 10px;
   border-style: ridge;
+}
+
+.Headshot-wrapper {
+  margin-left:50px;
+  margin-right:auto;
+  vertical-align: middle;
+  width:960px;
 }
 
 @keyframes App-logo-spin {
