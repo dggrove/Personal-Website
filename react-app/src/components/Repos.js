@@ -22,7 +22,7 @@ function Repos() {
 
     return(
         <ul>
-            {repoInfo.map((repo) => <Repo repository={repo}/>)}
+            {repoInfo.map((repo) => <Repo key={repo.id} repository={repo}/>)}
         </ul>
     )
 }

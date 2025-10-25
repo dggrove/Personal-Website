@@ -2,19 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
+.Headshot {
   /*height: 40vmin;*/
   max-height: 400px;
   /*pointer-events: none;*/
   position: relative;
   /*display: block;*/
   /*margin-left: 5%;*/
-  /*margin-right: auto;*/
+  margin-right: auto;
   margin-top: 46px;
   /*margin-bottom: 10%;*/
   float: left;
   /*object-fit: fill;*/
-  background-image: url(https://media.licdn.com/dms/image/D4E03AQHvt72herMUbw/profile-displayphoto-shrink_800_800/0/1685734833853?e=2147483647&v=beta&t=IzSmnZhyIJ2RFGC6IvWc8LQsI5Xfzjqf2_Gi77U89qQ);
   border-radius: 100px;
   border-style: outset;
   border-color: #c41e3a;
@@ -47,17 +46,21 @@
 }
 
 .App-header-item {
-  content: "";
+  /*content: "";*/
   position: relative;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
 }
 
 .Bio {
+  max-height: 400px;
+  margin-top: 46px;
+  /*margin-right:auto;*/
   vertical-align: center;
-  position: relative;
-  /*align-self: middle;
-  text-align: center;*/
+  /*position: relative;*/
+  /*align-self: middle;*/
+  text-align: center;
   text-overflow:inherit;
+  /*font-size: larger;*/
 }
 
 .Button {
@@ -72,7 +75,7 @@
 
 .Headshot-wrapper {
   margin-left:50px;
-  margin-right:auto;
+  margin-right:50px;
   vertical-align: middle;
   width:960px;
 }

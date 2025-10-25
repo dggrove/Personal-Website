@@ -12,10 +12,11 @@ function Home() {
         <div className="App-header-background">
           <header className="App-header">
             <div className="Headshot-wrapper">
-              <img src={headshot} className="App-logo App-header-item" />
+              <img src={headshot} className="Headshot App-header-item" alt="Headshot of the developer" />
             </div>
-            <div className="Bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div className="Bio App-header-item">
+              Hey y'all! 
+              My name is Drew Grove, and I'm happy you've found my personal website!
             </div>
             
           </header>
