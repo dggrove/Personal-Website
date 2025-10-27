@@ -4,7 +4,7 @@ import Repo from './Repo';
 
 const getRepos = async() => {
     let res = await fetch(
-        `https://api.github.com/users/SkylordGrove/repos`
+        `https://api.github.com/users/dggrove/repos`
     );
     let data = await res.json();
     return data;
