@@ -1,5 +1,4 @@
 import "../styles/Navbar.css";
-import { Fragment } from "react"
 
 function Navbar() {
     return (

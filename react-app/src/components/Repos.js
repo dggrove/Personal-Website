@@ -1,12 +1,12 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import Repo from './Repo';
+import "../styles/Repo.css";
 
 const getRepos = async() => {
-    let res = await fetch(
+    const res = await fetch(
         `https://api.github.com/users/dggrove/repos`
     );
-    let data = await res.json();
+    const data = await res.json();
     return data;
 }
 
@@ -21,7 +21,7 @@ function Repos() {
     }, [])
 
     return(
-        <ul>
+        <ul className="repo-list">
             {repoInfo.map((repo) => <Repo key={repo.id} repository={repo}/>)}
         </ul>
     )
