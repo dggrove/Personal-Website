@@ -1,13 +1,14 @@
 import "../styles/Navbar.css";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
         <div className="Navbar-Default"> 
-            <a className="Navbar-Icon" href="http://localhost:3000/">DG</a>
+            <Link className="Navbar-Icon" to="/">DG</Link>
             <div className="Navbar-Links">
-                <a className="Navbar-Item" href="/Projects">Projects</a>
-                <a className="Navbar-Item">Hello</a>
-                <a className="Navbar-Item">About</a>
+                <Link className="Navbar-Item" to="/projects">Projects</Link>
+                <Link className="Navbar-Item" to="#">Hello</Link>
+                <Link className="Navbar-Item" to="#">About</Link>
             </div>
         </div>
     )
